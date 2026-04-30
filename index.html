@@ -10,6 +10,10 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-17927313236');
+  gtag('config', 'AW-17927313236/P_XICJvd1_EbENSutORC', {
+  'phone_conversion_number': '+91 98909 88095' 
+});
+
 </script>
   
   <meta charset="UTF-8" />
@@ -69,7 +73,8 @@ function gtag_report_conversion(url) {
           <li class="link"><a href="#service">Service</a></li>
           <li class="link"><a href="#client">Testimonials</a></li>
           <li class="link"><a href="#contact">Contact Us</a></li>
-          <li class="link"><a href="tel:+919890988095">Call Now!</a></li>
+          <!-- Change this line in your nav -->
+<li class="link"><a href="tel:+919890988095" onclick="return gtag_report_conversion('tel:+919890988095');">Call Now!</a></li>
         </ul>
 
       </div>
@@ -455,11 +460,11 @@ Discover Nashik’s Spiritual & Scenic Beauty
 
 
 
-  <a href="tel:+919890988095" target="_blank">
+<a href="tel:+919890988095" target="_blank" onclick="return gtag_report_conversion('tel:+919890988095');">
     <button id="calll">
       <img src="assets/call.png" style="width:55px; height:55px;">
     </button>
-  </a>
+</a>
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
